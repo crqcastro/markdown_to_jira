@@ -1,0 +1,18 @@
+[
+  {
+    "keys": ["super+alt+j"],
+    "command": "markdown_to_jira"
+  },
+  {
+    "keys": ["super+alt+shift+j"],
+    "command": "markdown_to_jira_copy"
+  },
+  {
+    "keys": ["super+alt+m"],
+    "command": "jira_to_markdown"
+  },
+  {
+    "keys": ["super+alt+shift+m"],
+    "command": "jira_to_markdown_copy"
+  }
+]

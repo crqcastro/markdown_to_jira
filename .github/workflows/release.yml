@@ -1,0 +1,35 @@
+name: release
+
+on:
+  push:
+    tags:
+      - '*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate tag format
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          echo "$TAG" | grep -E '^[0-9]+\.[0-9]+\.[0-9]+$'
+      - name: Create package archive
+        run: |
+          mkdir -p dist
+          zip -r "dist/MarkdownJiraConverter.sublime-package" \
+            markdown_jira_converter.py \
+            MarkdownJiraConverter.sublime-commands \
+            Main.sublime-menu \
+            "Default (Windows).sublime-keymap" \
+            "Default (Linux).sublime-keymap" \
+            "Default (OSX).sublime-keymap" \
+            MarkdownJiraConverter.sublime-settings \
+            messages.json \
+            messages \
+            LICENSE \
+            README.md
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/MarkdownJiraConverter.sublime-package

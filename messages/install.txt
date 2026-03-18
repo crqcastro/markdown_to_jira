@@ -1,0 +1,11 @@
+MarkdownJiraConverter installed successfully.
+
+Available commands:
+- Convert Markdown to Jira
+- Copy Markdown as Jira
+- Convert Jira to Markdown
+- Copy Jira as Markdown
+
+Open:
+- Command Palette
+- Tools > Markdown/Jira Converter
