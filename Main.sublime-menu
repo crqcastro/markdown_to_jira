@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tools",
+    "children": [
+      {
+        "caption": "-"
+      },
+      {
+        "caption": "Markdown/Jira Converter",
+        "children": [
+          {
+            "caption": "Convert Markdown to Jira",
+            "command": "markdown_to_jira"
+          },
+          {
+            "caption": "Copy Markdown as Jira",
+            "command": "markdown_to_jira_copy"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "caption": "Convert Jira to Markdown",
+            "command": "jira_to_markdown"
+          },
+          {
+            "caption": "Copy Jira as Markdown",
+            "command": "jira_to_markdown_copy"
+          },
+          {
+            "caption": "-"
+          },
+          {
+            "caption": "Settings",
+            "children": [
+              {
+                "caption": "Default Settings",
+                "command": "open_file",
+                "args": {
+                  "file": "${packages}/MarkdownJiraConverter/MarkdownJiraConverter.sublime-settings"
+                }
+              },
+              {
+                "caption": "User Settings",
+                "command": "open_file",
+                "args": {
+                  "file": "${packages}/User/MarkdownJiraConverter.sublime-settings"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

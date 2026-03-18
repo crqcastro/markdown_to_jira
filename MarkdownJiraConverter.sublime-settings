@@ -1,0 +1,8 @@
+{
+  "spaces_per_indent": 2,
+  "convert_tables": true,
+  "convert_images": true,
+  "convert_blockquotes": true,
+  "blockquote_multiline": true,
+  "preserve_code_language": true
+}

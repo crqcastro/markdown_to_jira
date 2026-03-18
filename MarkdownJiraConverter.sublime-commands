@@ -1,0 +1,18 @@
+[
+  {
+    "caption": "Markdown/Jira: Convert Markdown to Jira",
+    "command": "markdown_to_jira"
+  },
+  {
+    "caption": "Markdown/Jira: Copy Markdown as Jira",
+    "command": "markdown_to_jira_copy"
+  },
+  {
+    "caption": "Markdown/Jira: Convert Jira to Markdown",
+    "command": "jira_to_markdown"
+  },
+  {
+    "caption": "Markdown/Jira: Copy Jira as Markdown",
+    "command": "jira_to_markdown_copy"
+  }
+]
