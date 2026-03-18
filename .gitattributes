@@ -1,0 +1,6 @@
+*.png export-ignore
+*.jpg export-ignore
+*.gif export-ignore
+*.zip export-ignore
+*.md export-ignore
+tests/ export-ignore
